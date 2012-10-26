@@ -3664,6 +3664,7 @@ class grocery_CRUD extends grocery_CRUD_States
 		$this->config->default_text_editor	= $ci->config->item('grocery_crud_default_text_editor');
 		$this->config->text_editor_type		= $ci->config->item('grocery_crud_text_editor_type');
 		$this->config->character_limiter	= $ci->config->item('grocery_crud_character_limiter');
+		$this->config->default_theme		= $ci->config->item('grocery_crud_default_theme');
 		
 		/** Initialize default paths */
 		$this->default_javascript_path				= $this->default_assets_path.'/js';
@@ -3673,6 +3674,7 @@ class grocery_CRUD extends grocery_CRUD_States
 	
 		
 		$this->character_limiter = $this->config->character_limiter;
+		$this->default_theme = $this->config->default_theme;
 		
 		if($this->character_limiter === 0 || $this->character_limiter === '0')
 		{

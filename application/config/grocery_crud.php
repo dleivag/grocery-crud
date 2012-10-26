@@ -18,3 +18,6 @@
 	
 	//The character limiter at the list page, zero(0) value if you don't want character limiter at your list page
 	$config['grocery_crud_character_limiter'] 	= 30; 
+	
+	//Set default theme
+	$config['grocery_crud_default_theme'] 	= 'datatables';  // 'datatables' or 'flexigrid' 
